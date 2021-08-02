@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<ability-cash>
+    <export-options>
+        <module>{05150516-3C4E-4A40-8EB3-B42C9DCE9E79}</module>
+        <program-build>267</program-build>
+        <export-date>2019-06-14T03:24:29:149</export-date>
+        <account-folders/>
+        <time/>
+        <extra-comment n='1'>Документ</extra-comment>
+        <extra-comment n='2'>Контрагент</extra-comment>
+        <extra-comment n='4'>Источник</extra-comment>
+    </export-options>
+    <currencies>
+        <currency oid='{73430F56-F7AF-44ED-84F4-2411B86D925A}' changed-at='2019-05-24T05:59:25'>
+            <name>Российские рубли</name>
+            <code>RUR</code>
+            <precision>2</precision>
+        </currency>
+    </currencies>
+    <accounts>
+        <account>
+            <name>account_name</name>
+            <currency>RUR</currency>
+            <init-balance>0</init-balance>
+        </account>
+    </accounts>
+
+    <transactions>
+    </transactions>
+</ability-cash>
