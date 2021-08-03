@@ -9,12 +9,6 @@ import java.util.List;
 
 public class Main
 {
-    static void testMap()
-    {
-        HashMap<Integer,Integer> map = new HashMap<>();
-        map.put(5,3);
-    }
-
     static void testList()
     {
         ArrayList<Integer> list = new ArrayList<>();
