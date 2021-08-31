@@ -32,6 +32,12 @@ public class Main
         System.out.println("malloc time: "+mallocTime);
     }
 
+    public static void convert_LMA_FRB(String datePrefix) throws Exception
+    {
+        convert("Альфа (LM)","D:\\Ledmaster\\Финансы\\Выписки банка\\Ледмастер (Альфа)\\Ледмастер альфа "+datePrefix+".csv","D:\\Ledmaster\\Финансы\\AC_import\\lm_alfa_"+datePrefix+".xml");
+        convertRB("Росбанк (ИП Ф)","D:\\Ledmaster\\Финансы\\Выписки банка\\ИП Фролов (Росбанк)\\ИП Фролов Росбанк "+datePrefix+".CSV","D:\\Ledmaster\\Финансы\\AC_import\\ipf_rb_"+datePrefix+".xml");
+    }
+
     static void convert20210514(String datePrefix) throws Exception
     {
         convert("Альфа (LM)","D:\\Ledmaster\\Финансы\\Выписки банка\\Ледмастер (Альфа)\\Ледмастер альфа "+datePrefix+".csv","D:\\Ledmaster\\Финансы\\AC_import\\lm_alfa_"+datePrefix+".xml");
@@ -62,8 +68,10 @@ public class Main
 
      public static void main(String[] args) throws Exception
     {
-        convertRB("Росбанк (ИП Ф)","D:\\Ledmaster\\Финансы\\Выписки банка\\ИП Фролов (Росбанк)\\ИП Фролов Росбанк 2021.07.29.CSV","D:\\Ledmaster\\Финансы\\AC_import\\ipf_rb_2021.07.29.xml");
-        convert20210514("2021.07.29");
+        convert_LMA_FRB("2021.08.26");
+
+        //convertRB("Росбанк (ИП Ф)","D:\\Ledmaster\\Финансы\\Выписки банка\\ИП Фролов (Росбанк)\\ИП Фролов Росбанк 2021.07.29.CSV","D:\\Ledmaster\\Финансы\\AC_import\\ipf_rb_2021.07.29.xml");
+        //convert20210514("2021.07.29");
 
 
         //convertRB("Росбанк (ИП Ф)","D:\\Ledmaster\\Финансы\\Выписки банка\\ИП Фролов (Росбанк)\\ИП Фролов Росбанк 2021.06.29.CSV","D:\\Ledmaster\\Финансы\\AC_import\\ipf_rb_2021.06.29.xml");
